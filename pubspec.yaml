@@ -1,16 +1,17 @@
-name: flutter_number_picker
-description: A new custom Flutter Number Picker plugin by using add and minus buttons.
+name: flutter_number_picker_plus
+description: Pick a number by using plus and minus buttons.
 version: 1.0.3
-homepage: https://github.com/phuongtinhbien
-repository: https://github.com/phuongtinhbien/flutter_number_picker
+homepage: https://github.com/dreamaviator
+repository: https://github.com/dreamaviator/flutter_number_picker_plus
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <=3.11.1"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.9
+  plugin_platform_interface: ^2.1.8
 
 dev_dependencies:
   flutter_test:
@@ -60,3 +61,17 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+  plugin:
+    platforms:
+      android:
+        package: me.dreamaviator.flutter_number_picker_plus
+        pluginClass: FlutterNumberPickerPlugin
+      ios:
+        pluginClass: CustomNumberPicker
+      macos:
+        pluginClass: CustomNumberPicker
+      web:
+        pluginClass: CustomNumberPicker
+        fileName: custom_number_picker
+      linux:
+        pluginClass: CustomNumberPicker

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_number_picker/flutter_number_picker.dart';
+import 'package:flutter_number_picker_plus/flutter_number_picker.dart';
 
 void main() {
   runApp(MyApp());

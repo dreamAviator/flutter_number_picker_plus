@@ -1,10 +1,11 @@
 
 
-Flutter Number Picker is a custom widget designed for choosing an integer or decimal number by using add and minus buttons.
+Flutter Number Picker plus is a custom widget designed for choosing an integer or decimal number by using add and minus buttons.
+This package is a continuation of the package [flutter_number_picker](https://github.com/phuongtinhbien/flutter_number_picker) by phuongtinhbien, that has not received updates in years and seems to be broken.
 
 
 ## Getting Started
-1. Head to `/pubspec.yaml` and add below dependencies like this:
+1. Head to `/pubspec.yaml` and add the dependency like this:
 ```
 dependencies:
   flutter:
@@ -18,23 +19,23 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_number_picker:
-      git: https://github.com/phuongtinhbien/flutter_number_picker.git
+      git: https://github.com/dreamaviator/flutter_number_picker_plus.git
 ```
 2. Run `flutter packages get` or use the GUI equivalent
-3. Now in your code `import 'package:flutter_number_picker/flutter_number_picker.dart';`
+3. Now in your code `import 'package:flutter_number_picker_plus/flutter_number_picker.dart';`
 4. You're ready to go!
 #### Creating FlutterNumberPicker Widget
 
 ```dart
 CustomNumberPicker(
-              initialValue: 10000,
-              maxValue: 1000000,
-              minValue: 0,
-              step: 10000,
-              onValue: (value) {
-                print(value.toString());
-              },
-            )
+  initialValue: 10000,
+  maxValue: 1000000,
+  minValue: 0,
+  step: 10000,
+  onValue: (num value) {//the value is of the type 'num', so be careful when using float or int
+    print(value.toString());
+  },
+)
 ```
 ### Attribute
 - `minValue` [required] is the minimum value of the ButtonPicker.

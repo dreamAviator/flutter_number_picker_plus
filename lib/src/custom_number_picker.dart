@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_number_picker/src/res.dart';
+import 'package:flutter_number_picker_plus/src/res.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomNumberPicker<T extends num> extends StatefulWidget {
+class CustomNumberPicker<T extends num> extends StatefulWidget {//TODO:add ability to type text
   final ShapeBorder? shape;
   final TextStyle? valueTextStyle;
   final Function(T) onValue;
